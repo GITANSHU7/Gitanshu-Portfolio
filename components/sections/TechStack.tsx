@@ -3,7 +3,13 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const technologies = [
+interface Technology {
+    name: string;
+    src?: string;
+    slug?: string;
+}
+
+const technologies: Technology[] = [
     { name: "ReactJs", src: "/react.png" },
     { name: "Typescript", src: "/typescript copy.png" },
     { name: "Nodejs", src: "/nodejs-dark.png" },
@@ -62,13 +68,13 @@ export function TechStack() {
                             className="flex items-center justify-center px-10 md:px-16 flex-shrink-0 opacity-40 hover:opacity-100 transition-all duration-500 cursor-default"
                         >
                             <img
-                                src={'src' in tech ? tech.src : `https://cdn.simpleicons.org/${tech?.slug}/${themeColorHex}`}
+                                src={tech.src ? tech.src : `https://cdn.simpleicons.org/${tech.slug}/${themeColorHex}`}
                                 alt={tech.name}
                                 className="h-8 md:h-10 w-auto object-contain select-none block"
                                 style={{
                                     maxHeight: '40px',
                                     // Apply a filter to local images to tint them towards the primary color
-                                    filter: 'src' in tech ? 'brightness(0) saturate(100%) invert(45%) sepia(93%) saturate(1400%) hue-rotate(230deg) brightness(100%) contrast(100%)' : 'none'
+                                    filter: tech.src ? 'brightness(0) saturate(100%) invert(45%) sepia(93%) saturate(1400%) hue-rotate(230deg) brightness(100%) contrast(100%)' : 'none'
                                 }}
                             />
                         </div>

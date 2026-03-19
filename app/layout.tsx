@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
-  title: "Gitanshu.dev - Personal Portfolio",
+  title: "Gitanshu.Asia - Personal Portfolio",
   description: "A premium personal portfolio website.",
 };
 

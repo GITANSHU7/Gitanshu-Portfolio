@@ -45,7 +45,7 @@ export function Header() {
             <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
                 {/* Logo */}
                 <div className="text-2xl font-bold tracking-tighter cursor-pointer">
-                    Gitanshu.<span className="text-primary">Dev</span>
+                    Gitanshu.<span className="text-primary">Asia</span>
                 </div>
 
                 {/* Desktop Nav */}

@@ -21,7 +21,7 @@ export function Footer() {
                 </div>
                 <div className="flex flex-col md:flex-row justify-center items-center gap-4">
                     <p className="text-muted-foreground text-sm">
-                        © {new Date().getFullYear()} Gitanshu.dev. All rights reserved.
+                        © {new Date().getFullYear()} Gitanshu.Asia. All rights reserved.
                     </p>
                     <span className="hidden md:inline text-muted-foreground/30">|</span>
                     <Link href="/login" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
