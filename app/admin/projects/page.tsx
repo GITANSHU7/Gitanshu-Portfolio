@@ -133,7 +133,7 @@ export default function ManageProjects() {
                             <Card className="overflow-hidden border-border/50 group h-full flex flex-col">
                                 <div className="aspect-video w-full bg-muted relative flex items-center justify-center overflow-hidden">
                                     {project.image_url ? (
-                                        <img src={project.image_url} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                        <img src={project.image_url} alt={project.title} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
                                     ) : (
                                         <Layers className="text-muted-foreground/20" size={48} />
                                     )}

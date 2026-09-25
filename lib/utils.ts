@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function getYearsOfExperience() {
-  const startDate = new Date('2021-10-01');
+  const startDate = new Date('2021-11-01');
   const today = new Date();
   
   let years = today.getFullYear() - startDate.getFullYear();
@@ -17,7 +17,6 @@ export function getYearsOfExperience() {
     months += 12;
   }
   
-  // Calculate the decimal part (months / 12)
-  const decimal = months / 12;
-  return (years + decimal).toFixed(1);
+  // Format as Years.Months (e.g., 4.10 for 4 years 10 months)
+  return `${years}.${months}`;
 }

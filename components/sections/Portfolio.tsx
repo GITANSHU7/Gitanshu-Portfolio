@@ -76,13 +76,13 @@ export function Portfolio() {
                                         exit={{ opacity: 0, scale: 0.8 }}
                                         transition={{ duration: 0.3 }}
                                     >
-                                        <Card className="overflow-hidden group relative aspect-[4/3] border-primary/10">
+                                        <Card className="overflow-hidden group relative aspect-video border-primary/10">
                                             <div className="w-full h-full bg-muted relative flex items-center justify-center overflow-hidden">
                                                 {project.image_url ? (
                                                     <img
                                                         src={project.image_url}
                                                         alt={project.title}
-                                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                                        className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                                                     />
                                                 ) : (
                                                     <Layers className="text-muted-foreground/20" size={64} />

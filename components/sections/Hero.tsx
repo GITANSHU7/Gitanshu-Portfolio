@@ -92,7 +92,7 @@ export function Hero() {
                             <p className="text-muted-foreground text-sm">Years Experience</p>
                         </div>
                         <div className="text-center md:text-left">
-                            <h3 className="text-3xl font-bold">12+</h3>
+                            <h3 className="text-3xl font-bold">16+</h3>
                             <p className="text-muted-foreground text-sm">Projects Done</p>
                         </div>
                     </div>
